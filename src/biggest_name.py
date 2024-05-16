@@ -2,4 +2,8 @@ from typing import List
 
 
 def find_biggest_name(names: List[str]) -> str:
-    raise NotImplementedError
+    biggesst_name = names
+    for name in names:
+        if len(name) > len(biggesst_name):
+            biggesst_name = name
+    return biggesst_name
